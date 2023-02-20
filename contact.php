@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Destination | crocus travel - Travel Agency HTML Template</title>
+    <title>Contact Us | Crocus - Best Travel Agency In Delhi</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="images/logo1.png" />
 
@@ -21,7 +21,15 @@
 
 <body>
 
-    <header>
+    <!-- <div id="preloader">
+        <div id="status"></div>
+    </div> -->
+
+    <?php 
+        include 'header.php';
+    ?>
+
+    <!-- <header>
         <div class="upper-head clearfix">
             <div class="container">
                 <div class="contact-info">
@@ -49,12 +57,12 @@
 
                     <nav class="navbar navbar-default navbar-sticky-function navbar-arrow">
                         <div class="logo pull-left">
-                            <a href="default.aspx"><img alt="Image" src="images/CrocusnewLogo.png" /></a>
+                            <a href="index.html"><img alt="Image" src="images/CrocusnewLogo.png" /></a>
                         </div>
                         <div id="navbar" class="navbar-nav-wrapper">
                             <ul class="nav navbar-nav" id="responsive-menu">
                                 <li>
-                                    <a href="default.aspx">Home</a>
+                                    <a href="index.html">Home</a>
                                 </li>
                                 <li>
                                     <a href="about.html">About <i class="fa fa-angle-down"></i></a>
@@ -72,7 +80,7 @@
                                         <li><a href="error.html">Client testimonials</a></li>
                                     </ul>
                                 </li>
-                                <li class="active">
+                                <li >
                                     <a href="destination.html">Destination</a>
                                 </li>
                                 <li>
@@ -84,7 +92,7 @@
                                 <li>
                                     <a href="blog.html">Blog</a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="contact.html">Contact</a>
                                 </li>
                             </ul>
@@ -96,16 +104,18 @@
             </div>
         </div>
     </div>
-
+ -->
 
     <section class="breadcrumb-outer text-center">
         <div class="container">
             <div class="breadcrumb-content">
-                <h2>Destination</h2>
+                <h2>Contact Us Page</h2>
                 <nav aria-label="breadcrumb">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Destinations</li>
+                        <li class="breadcrumb-item"><a href="#">Destinations</a></li>
+                        <li class="breadcrumb-item"><a href="#">Bahamas Cruises</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Booking</li>
                     </ul>
                 </nav>
             </div>
@@ -113,100 +123,92 @@
         <div class="section-overlay"></div>
     </section>
 
-
-    <section class="services pt-5 pb-5">
+    <section class="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mar-bottom-30">
-                    <div class="package-item">
-                        <div class="package-content">
-                            <h3>North India Tours</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                            <a href="destination-detail.aspx" class="btn-blue btn-red btn-style-1">Explore Now</a>
-                        </div>
-                        <img src="images/hotel/services2.jpg" alt="Image" />
+                <div class="col-lg-8 col-md-7">
+                    <div id="contact-form" class="contact-form">
+                        <div id="contactform-error-msg"></div>
+                        <form method="post" action="#" name="contactform" id="contactform">
+                            <div class="row">
+                                <div class="form-group mb-3 col-lg-12">
+                                    <label>Name:</label>
+                                    <input type="text" name="full_name" class="form-control" id="Name"
+                                        placeholder="Enter full name" required />
+                                </div>
+                                <div class="form-group mb-3 col-lg-6 col-md-6">
+                                    <label>Email:</label>
+                                    <input type="email" name="email" class="form-control" id="email"
+                                        placeholder="abc@xyz.com" required />
+                                </div>
+                                <div class="form-group mb-3 col-lg-6 col-md-6 ps-md-0">
+                                    <label>Phone Number:</label>
+                                    <input type="text" name="phone" class="form-control" id="phnumber"
+                                        placeholder="XXXX-XXXXXX" required />
+                                </div>
+                                <div class="textarea mb-3 col-lg-12">
+                                    <label>Message:</label>
+                                    <textarea name="comments" placeholder="Enter a message" required></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="comment-btn">
+                                        <input type="submit" class="btn-blue btn-red" id="submit"
+                                            value="Send Message" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-lg-6 mar-bottom-30">
-                    <div class="package-item package-item1">
-                        <img src="images/hotel/services1.jpg" alt="Image" />
-                        <div class="package-content">
-                            <h3>East India Tours</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                            <a href="hotel-detail.html" class="btn-blue btn-red btn-style-1">Explore Now</a>
+                <div class="col-lg-4 col-md-5">
+                    <div class="contact-about footer-margin">
+                        <div class="about-logo">
+                            <img src="images/CrocusnewLogo.png" alt="Image" />
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6 mar-bottom-30">
-                    <div class="package-item">
-                        <div class="package-content">
-                            <h3>North East India Tours</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                            <a href="hotel-detail.html" class="btn-blue btn-red btn-style-1">Explore Now</a>
+                        <h4>Travel With Us</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                        <div class="contact-location">
+                            <ul>
+                                <li><i class="flaticon-maps-and-flags" aria-hidden="true"></i> Location</li>
+                                <li><i class="flaticon-phone-call"></i> (012)-345-6789</li>
+                                <li><i class="flaticon-mail"></i> <a href="/cdn-cgi/l/email-protection"
+                                        class="__cf_email__"
+                                        data-cfemail="37435842455943455641525b77435244435a565e5b1954585a">[email&#160;protected]</a>
+                                </li>
+                            </ul>
                         </div>
-                        <img src="images/hotel/services2.jpg" alt="Image" />
-                    </div>
-                </div>
-                <div class="col-lg-6 mar-bottom-30">
-                    <div class="package-item package-item1">
-                        <img src="images/hotel/services1.jpg" alt="Image" />
-                        <div class="package-content">
-                            <h3>South India Tours</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                            <a href="hotel-detail.html" class="btn-blue btn-red btn-style-1">Explore Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6 mar-bottom-30">
-                    <div class="package-item">
-                        <div class="package-content">
-                            <h3>West India Tours</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                            <a href="hotel-detail.html" class="btn-blue btn-red btn-style-1">Explore Now</a>
-                        </div>
-                        <img src="images/hotel/services2.jpg" alt="Image" />
-                    </div>
-                </div>
-                <div class="col-lg-6 mar-bottom-30">
-                    <div class="package-item package-item1">
-                        <img src="images/hotel/services1.jpg" alt="Image" />
-                        <div class="package-content">
-                            <h3>Central India Tours</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                            <a href="hotel-detail.html" class="btn-blue btn-red btn-style-1">Explore Now</a>
+                        <div class="footer-social-links">
+                            <ul>
+                                <li class="social-icon">
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="social-icon">
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="social-icon">
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="social-icon">
+                                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="social-icon">
+                                    <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <div class="map">
+        <div id="map" style="height: 350px; width: 100%"></div>
+    </div>
 
     <footer>
         <div class="footer-upper">
             <div class="container">
-                <div class="newsletter text-center">
-                    <div class="section-title section-title-white text-center">
-                        <h2>Newsletter Signup</h2>
-                        <div class="section-icon section-icon-white">
-                            <i class="flaticon-diamond"></i>
-                        </div>
-                        <p>Subscribe to our weekly newsletter to get updated on our latest deals</p>
-                    </div>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="search" />
-                            <a href="#"><span class="search_btn"><i class="fa fa-paper-plane" aria-hidden="true"></i>
-                                    Sign Up</span></a>
-                        </div>
-                    </form>
-                </div>
                 <div class="footer-links">
                     <div class="row">
                         <div class="col-lg-3">
@@ -222,7 +224,7 @@
                                         <li><i class="flaticon-phone-call"></i> (012)-345-6789</li>
                                         <li><i class="flaticon-mail"></i> <a href="/cdn-cgi/l/email-protection"
                                                 class="__cf_email__"
-                                                data-cfemail="c3b7acb6b1adb7b1a2b5a6af83b7a6b0b7aea2aaafeda0acae">[email&#160;protected]</a>
+                                                data-cfemail="53273c26213d27213225363f13273620273e323a3f7d303c3e">[email&#160;protected]</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -341,7 +343,7 @@
         <div class="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-md-6">
                         <div class="copyright-content">
                             <p>
                                 2023 <i class="fa fa-copyright" aria-hidden="true"></i> crocus travel by <a
@@ -349,7 +351,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-md-6">
                         <div class="payment-content">
                             <ul>
                                 <li>We Accept</li>
@@ -374,13 +376,21 @@
     </footer>
 
 
+    <div id="back-to-top">
+        <a href="#"></a>
+    </div>
+
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugin.js"></script>
+    <script src="js/map.js"></script>
     <script src="js/main.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4JwWo5VPt9WyNp3Ne2uc2FMGEePHpqJ8&amp;callback=initMap"
+        async defer></script>
     <script src="js/preloader.js"></script>
-    <script>(function () { var js = "window['__CF$cv$params']={r:'78d869e6ea6384f2',m:'UiSH1Rbf362tl5If_Ijnsjxxc9EtDbHs0IKSD4_1gsg-1674391809-0-AUntanbugZo6E7Sb+TWdVUYa9KTzFsByi13R/8L0EaUaqAVaKKeV/O1hKzRwi7Eiu7K9beb6iCH67jx5crsoiLTU3QJBu6Xeq4n3Eh9z2AcCpMNLNXKpjWdY0BhnZbpAFPwL6hnrSeLGWL9nknmXiiOdYPb9SznkzRRjebX75yUl',s:[0x56885c3116,0x5dca676b7a],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.nonce = ''; _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
+    <script>(function () { var js = "window['__CF$cv$params']={r:'78d86a1ac95384f2',m:'8sPBgGveJZPoIhZilvKboJPkNOCMNjtpvrllfExN3Zc-1674391818-0-AXNHwhFv+ca5EdHjC9dArGAXTyWbt2t5DFJwLsw2QOdOpJ9YbAG/G9owZgNBpjrPOurG+LuQlJTo5iaNzPrl5UNh8uYNqFaNPrlwW+zHnitTEuVJ/kX6+zn7KbciRdlo5U9CNX+zC/jSB8WWZ89Rv0nM7cVIHr/+Ni+jgEPyEj89',s:[0xc2e56fe9da,0xd90f11decd],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.nonce = ''; _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
 </body>
 
 </html>

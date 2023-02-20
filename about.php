@@ -23,12 +23,11 @@
 
 <body>
 
-    <div id="preloader">
-        <div id="status"></div>
-    </div>
+<?php 
+        include 'header.php';
+    ?>
 
-
-    <header>
+    <!-- <header>
         <div class="upper-head clearfix">
             <div class="container">
                 <div class="contact-info">
@@ -102,7 +101,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <section class="breadcrumb-outer text-center">

@@ -21,11 +21,16 @@
 
 <body>
 
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div id="status"></div>
-    </div>
+    </div> -->
 
 
+    <?php 
+        include 'header.php';
+    ?>
+
+<!-- 
     <header>
         <div class="upper-head clearfix">
             <div class="container py-2">
@@ -100,7 +105,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <section class="swiper-banner">

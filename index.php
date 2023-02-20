@@ -122,7 +122,7 @@
 
                         <nav class="navbar navbar-default navbar-sticky-function navbar-arrow">
                             <div class="logo pull-left">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img alt="Image" src="images/CrocusnewLogo.png" class="logo-white" />
                                     <img alt="Image" src="images/CrocusnewLogo.png" class="logo-color" />
                                 </a>
@@ -130,38 +130,38 @@
                             <div id="navbar" class="navbar-nav-wrapper">
                                 <ul class="nav navbar-nav" id="responsive-menu">
                                     <li class="active">
-                                        <a href="index.html">Home</a>
+                                        <a href="index.php">Home</a>
                                     </li>
                                     <li>
-                                        <a href="about.html">About <i class="fa fa-angle-down"></i></a>
+                                        <a href="about.php">About <i class="fa fa-angle-down"></i></a>
                                         <ul>
                                             <li>
                                                 <a href="#">Why crocus travel</a>
                                             </li>
                                             <li>
-                                                <a href="tour-detail.html">Crocus travel expo management</a>
+                                                <a href="tour-detail.php">Crocus travel expo management</a>
                                             </li>
                                             <li>
-                                                <a href="booking.html">Quality services</a>
+                                                <a href="booking.php">Quality services</a>
                                             </li>
-                                            <li><a href="price-list.html">Crocus travel team</a></li>
-                                            <li><a href="error.html">Client testimonials</a></li>
+                                            <li><a href="price-list.php">Crocus travel team</a></li>
+                                            <li><a href="error.php">Client testimonials</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="destination.html">Destination</a>
+                                        <a href="destination.php">Destination</a>
                                     </li>
                                     <li>
-                                        <a href="services.html">Services</a>
+                                        <a href="services.php">Services</a>
                                     </li>
                                     <li>
-                                        <a href="tour-packages.html">Tour Packages</a>
+                                        <a href="tour-packages.php">Tour Packages</a>
                                     </li>
                                     <li>
-                                        <a href="blog.html">Blog</a>
+                                        <a href="blog.php">Blog</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">Contact</a>
+                                        <a href="contact.php">Contact</a>
                                     </li>
                                 </ul>
                             </div>
